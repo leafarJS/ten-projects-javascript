@@ -1,0 +1,87 @@
+.progress-bar-section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(185, 239, 67);
+}
+.progress-bar-container {
+  text-align: center;
+}
+.progress-bar-content {
+  width: 31.5rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 1;
+}
+.progress-bar-back {
+  position: absolute;
+  height: 0.25rem;
+  width: 100%;
+  background-color: lightgray;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.progress-bar-front {
+  position: absolute;
+  height: 0.25rem;
+  width: 0%;
+  background-color: green;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s linear width;
+}
+.step {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.25rem solid lightgray;
+  color: lightgray;
+  z-index: 2;
+}
+.step.checked {
+  color: green;
+  border-color: green;
+  transition: all 0.4s linear;
+  transition-delay: 0.3s;
+}
+.step.checked small {
+  position: absolute;
+  bottom: -1.25rem;
+  font-family: cursive;
+}
+.btn-progress-bar {
+  background-color: slateblue;
+  border: none;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  margin: 4.375rem 0.625rem 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.btn-progress-bar:hover {
+  opacity: 0.9;
+}
+.btn-progress-bar:active {
+  transform: scale(0.9);
+}
+.btn-progress-bar:disabled {
+  background-color: lightgray;
+}
+@media (max-width: 500px) {
+  .progress-bar-content {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 Projects JS</title>
+    <!-- TODO: font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/progressBar.css" />
+    <link rel="stylesheet" href="css/toDoList.css" />
+    <link rel="stylesheet" href="css/loadingPage.css" />
+    <link rel="stylesheet" href="css/selector.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/password.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/emoji.css" />
+  </head>
+  <body>
+    <!-- TODO: Section  -->
+    <div class="double-landing-page-section" id="section-">
+      <div class="double-landing-page-container">
+        <div class="split left">
+          <h1>Apple</h1>
+          <button class="button">Buy Now</button>
+        </div>
+        <div class="split right">
+          <h1>Samsung</h1>
+          <button class="button">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="toDoList-section" id="section-">
+      <form class="form">
+        <input
+          type="text"
+          name="input"
+          id="input"
+          placeholder="Enter your task"
+          class="input-toDoList"
+          autocomplete="off"
+        />
+        <ul class="list-toDoList">
+          <!-- <li class="numList">
+            buy Milk <i class="fas fa-check-square"></i
+            ><i class="fas fa-trash"></i>
+          </li>
+          <li class="numList">
+            Call Coco <i class="fas fa-check-square"></i
+            ><i class="fas fa-trash"></i>
+          </li> -->
+        </ul>
+      </form>
+    </div>
+    <!-- End Section  -->
+    <!-- TODO: Section  -->
+    <div class="selector-section" id="section-">
+      <div class="menu">
+        <p>Social Media</p>
+        <i class="fas fa-angle-down"></i>
+      </div>
+
+      <ul class="social-lists hide">
+        <li>
+          <i class="fa-brands fa-facebook" style="color: blue"></i>
+          <p>Facebook</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: red"></i>
+          <p>Youtube</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-twitter" style="color: skyblue"></i>
+          <p>Twitter</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin" style="color: blue"></i>
+          <p>Linkedin</p>
+        </li>
+      </ul>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="search-section" id="section-">
+      <div class="search-bar-container active">
+        <img
+          src="https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/magnifier-512.png"
+          alt="search"
+          class="magnifier"
+        />
+        <input type="text" class="input" placeholder="Search..." />
+        <img
+          src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+          alt="mic-icon"
+          class="mic-icon"
+        />
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="password-section" id="section-">
+      <div class="password-container">
+        <h2>random password generator</h2>
+        <div class="input-container">
+          <input
+            type="text"
+            name="input"
+            id="input"
+            class="input"
+            placeholder="Create Password"
+            readonly="true"
+            value=""
+          />
+          <i class="fa-solid fa-copy fa-2x" alt="Copy"></i>
+        </div>
+        <button class="btn-password">Generate</button>
+      </div>
+      <div class="alert-container active">Password Copied</div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="countdown-section" id="section-">
+      <h2>countdown to new year</h2>
+      <div class="year">2022</div>
+      <div class="countdown">
+        <div id="day">00</div>
+        <div id="hour">00</div>
+        <div id="minute">00</div>
+        <div id="second">00</div>
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="gallery-section" id="section-">
+      <div class="image-container">
+        <span style="--i: 1">
+          <img src="https://picsum.photos/id/237/300/200" alt="random" />
+        </span>
+        <span style="--i: 2">
+          <img src="https://picsum.photos/id/35/300/200" alt="random" />
+        </span>
+        <span style="--i: 3">
+          <img src="https://picsum.photos/id/16/300/200" alt="random" />
+        </span>
+        <span style="--i: 4">
+          <img src="https://picsum.photos/id/15/300/200" alt="random" />
+        </span>
+        <span style="--i: 5">
+          <img src="https://picsum.photos/id/10/300/200" alt="random" />
+        </span>
+        <span style="--i: 6">
+          <img src="https://picsum.photos/id/7/300/200" alt="random" />
+        </span>
+        <span style="--i: 7">
+          <img src="https://picsum.photos/id/37/300/200" alt="random" />
+        </span>
+        <span style="--i: 8">
+          <img src="https://picsum.photos/id/137/300/200" alt="random" />
+        </span>
+      </div>
+      <div class="btn-container">
+        <button class="btn" id="prev">Prev</button>
+        <button class="btn" id="next">Next</button>
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section -->
+    <div class="profile-section" id="section-">
+      <div class="profile-container">
+        <i class="fas fa-briefcase fa-3x icon"></i>
+        <div class="profile-counter" data-ceil="1500">1500</div>
+        <h4>year experience</h4>
+      </div>
+      <div class="profile-container">
+        <i class="fas fa-cloud fa-3x icon"></i>
+        <div class="profile-counter" data-ceil="260">260</div>
+        <h4>websites made</h4>
+      </div>
+      <div class="profile-container">
+        <i class="fab fa-apple fa-3x icon"></i>
+        <div class="profile-counter" data-ceil="26">26</div>
+        <h4>apps made</h4>
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="emoji-section" id="section-">
+      <div class="emoji-content">
+        <div class="emoji-container">
+          <i class="far fa-face-angry fa-3x"></i>
+          <i class="far fa-face-frown fa-3x"></i>
+          <i class="far fa-face-meh fa-3x"></i>
+          <i class="far fa-face-smile fa-3x"></i>
+          <i class="far fa-face-laugh fa-3x"></i>
+        </div>
+        <div class="emoji-rating-container">
+          <i class="fas fa-star fa-2x active"></i>
+          <i class="fas fa-star fa-2x"></i>
+          <i class="fas fa-star fa-2x"></i>
+          <i class="fas fa-star fa-2x"></i>
+          <i class="fas fa-star fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End  Section  -->
+
+    <!-- TODO: Section  -->
+    <div class="progress-bar-section">
+      <div class="progress-bar-container">
+        <div class="progress-bar-content">
+          <hr class="progress-bar-back" />
+          <hr class="progress-bar-front" />
+          <div class="step checked">
+            <i class="fas fa-check"></i>
+            <small>Start</small>
+          </div>
+          <div class="step">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="step">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="step">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="step">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <button class="btn-progress-bar" id="prev-progress-bar" disabled>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="btn-progress-bar" id="next-progress-bar">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- End Section  -->
+
+    <!-- TODO: vanilla javascript -->
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(247, 152, 18);
+  font-family: cursive;
+}
+.profile-container {
+  margin: 1.25rem;
+  border: dotted rgb(156, 102, 15);
+  min-width: 18rem;
+  height: 9rem;
+  position: relative;
+  padding: 1.2rem;
+}
+.profile-container h4 {
+  margin: 0;
+  position: absolute;
+  bottom: 0.0625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.icon {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-counter {
+  font-size: 3.125rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(166, 20, 166);
+}
+@media (max-width: 760px) {
+  .profile-section {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,60 @@
+.toDoList-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: greenyellow;
+}
+.form {
+  position: absolute;
+  top: 140%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+  width: 25rem;
+  background-color: yellow;
+  border-radius: 0.7rem;
+}
+.input-toDoList {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.7rem 0.7rem 0 0;
+  border: none;
+  font-size: 1.25rem;
+  font-family: cursive;
+}
+input::placeholder {
+  color: lightgrey;
+}
+.list-toDoList {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.list-toDoList li {
+  position: relative;
+  list-style-type: none;
+  padding: 1.25rem;
+  font-family: cursive;
+  border-top: dotted;
+  border-color: rgb(253, 211, 4);
+}
+.list-toDoList li .fa-trash {
+  color: red;
+  position: absolute;
+  right: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list-toDoList li .fa-check-square {
+  color: green;
+  position: absolute;
+  right: 1.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.list-toDoList li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+.list-toDoList li.checked .fa-check-square {
+  color: darkgray;
+}
